@@ -1,1 +1,53 @@
+body {
+  background-color: #862d59;
+}
+header {
+  background-color: #4d0099;
+  padding-bottom: 20px;
+}
+h1 {
+  color: #fff;
+  font-size: 36px;
+}
+p {
+  color: #fff;
+  font-family: cursive;
+}
+span {
+  color: yellow;
+  font-size: 26px;
+  font-style: oblique;
+}
+h2 {
+ color: #fff;
+}
+h3 {
 
+}
+td {
+  color: #fff;
+
+}
+th {
+  color: #fff;
+  font-size: 18px;
+}
+caption {
+  color: #fff;
+  font-size: 22px;
+  font-family: helvetica;
+  padding-top: 10px;
+}
+li {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  font-style:
+}
+form {
+  margin: auto;
+  padding-top: 4px;
+  background-color:;
+  font-style: italic;
+  font-weight: 400;
+}
