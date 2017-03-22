@@ -1,16 +1,10 @@
-body {
-  background-color: #862d59;
-}
-header {
-  background-color: #4d0099;
-  padding-bottom: 20px;
-}
+
 h1 {
-  color: #fff;
+  color: #ccc;
   font-size: 36px;
 }
 p {
-  color: #fff;
+  color: #aaa;
   font-family: cursive;
 }
 span {
@@ -19,27 +13,27 @@ span {
   font-style: oblique;
 }
 h2 {
- color: #fff;
+ color: #ccc;
 }
 h3 {
 
 }
 td {
-  color: #fff;
+  color: #ccc;
 
 }
 th {
-  color: #fff;
+  color: #ccc;
   font-size: 18px;
 }
 caption {
-  color: #fff;
+  color: #ccc;
   font-size: 22px;
   font-family: helvetica;
   padding-top: 10px;
 }
 li {
-  color: #fff;
+  color: #ccc;
   font-size: 18px;
   font-weight: 500;
   font-style:

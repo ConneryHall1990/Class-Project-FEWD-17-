@@ -7,22 +7,29 @@
   crossorigin="anonymous"></script>
 
   <title>Better With Age</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="css/style.css"/>
   <script src="js/main.js"></script>
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <div class="container">
     <header>
-      <img src="LargeRed_SmallWhite_BrieCheese.jpg" alt="Wines and Cheese" height="20"/>
-      <div class=“wrap”>
-  	   <div class=“container”>
-  	       <h1 class=“name”>Better With Age</h1>
-  	       <ul class=“main-nav”>
-  	           <li><a href=“#”>Red Wines</a></li>
-  		         <li><a href=“#”>White Wines</a></li>
-  		         <li><a href=“#”>Cheese’s</a></li>
+
+
+
+  	       <h1 class="name">Better With Age</h1>
+           <nav class="navbar navbar-default">
+  	       <ul class="nav navbar-nav">
+  	           <li><a href="#red">Red Wines</a></li>
+  		         <li><a href="#white">White Wines</a></li>
+  		         <li><a href="#cheese">Cheese’s</a></li>
   	       </ul>
-  	    </div>
-  	  </div>
+         </nav>
+
+         <img src="img/wine gradient.jpg"/>
 
   </header>
 
@@ -41,22 +48,19 @@
       <input type="checkbox" name="Spicy" value="spicy">Spicy</input><br>
       <br>
       <input type="checkbox" name="Sour" value="sour">Sour</input><br>
+      <br>
+      <input type="checkbox" name="Dry" value="dry">Dry</input><br>
 
     </form>
-    <button id="myBtn">Wine Results</button>
-  <div id="myModal" class="modal">
-    <div class="modal-content">
-      <span class="close"></span>
-      <p>This is the wine you're looking for</p>
-    </div>
-  </div>
+
 
     <br>
   <span>Wines List</span>
 
   <h3>Names and Origins</h3>
 
-  <table style="background-color: black, color="white"">
+  <a name="red"></a>
+  <table class="table table-hover">
     <caption style="">Reds</caption>
     <thead>
       <tr>
@@ -68,76 +72,77 @@
       <tr>
         <td scope="row">Cabernet Franc</td>
         <td>France</td>
-        <td class="flavor">Violets, fruity, black olive, coffee</td>
+        <td class="flavor">Flowery, Fruity, Bitter, Dry</td>
       </tr>
 
       <tr>
         <td scope="row">Cabernet Sauvignon</td>
         <td>France</td>
-        <td class="flavor">Bell Pepper, green olive, herb, cassis, black cherry</td>
+        <td class="flavor">Bitter, Flowery, Sour</td>
       </tr>
 
       <tr>
         <td scope="row">Gamay</td>
         <td>France</td>
-        <td class="flavor">Strawberry, Raspberry, Cherry</td>
+        <td class="flavor">Fruity, Sour</td>
       </tr>
 
       <tr>
         <td scope="row">Grenache/Garnacha</td>
         <td>Spain</td>
-        <td class="flavor">Spice, Cherry</td>
+        <td class="flavor">Spicy, Fruity</td>
       </tr>
 
       <tr>
         <td scope="row">Malbec</td>
         <td>France</td>
-        <td class="flavor">Sour cherry, Spice</td>
+        <td class="flavor">Sour, Spicy, Dry</td>
       </tr>
 
       <tr>
         <td scope="row">Merlot</td>
         <td>France</td>
-        <td class="flavor">Watermelon, Strawberry, Cherry, Plum</td>
+        <td class="flavor">Fruity</td>
       </tr>
 
       <tr>
         <td scope="row">Mourvedre/Mataro</td>
         <td>Spain</td>
-        <td class="flavor">Spice, Cherry</td>
+        <td class="flavor">Spice, Bitter, Cherry</td>
       </tr>
 
       <tr>
         <td scope="row">Nebbiolo</td>
         <td>Italy</td>
-        <td class="flavor">Plum, Pie cherry, Tar</td>
+        <td class="flavor">Fruity, Sour</td>
       </tr>
 
       <tr>
         <td scope="row">Pinot Noir</td>
         <td>France</td>
-        <td class="flavor">Tomato leaf, Beet root, Pale cherry, Blackberry, Cola, Plum</td>
+        <td class="flavor">Flowery, Fruity, Sweet</td>
       </tr>
 
       <tr>
         <td scope="row">Sangiovese</td>
         <td>Italy</td>
-        <td class="flavor">Pie cherry, Anise, Tobacco leaf</td>
+        <td class="flavor">Sour, Sweet</td>
       </tr>
       <tr>
         <td scope="row">Syrah/Shiraz</td>
         <td>France</td>
-        <td class="flavor">Blackberry, Boysenberry, Plum, Pepper, Clove</td>
+        <td class="flavor">Flowery, Spicy, Fruity</td>
       </tr>
 
       <tr>
         <td scope="row">Zinfandel</td>
         <td>Croatia</td>
-        <td class="flavor">Raspberry, Blackberry, Black cherry, Raisin, Prune</td>
+        <td class="flavor">Sour, Fruity</td>
       </tr>
   </table>
 
-  <table>
+  <a name="white"></a>
+  <table class="table table-hover">
     <caption>Whites</caption>
     <thead>
       <tr>
@@ -150,137 +155,151 @@
       <tr>
         <td scope="row">Chardonnay</td>
         <td>France</td>
-        <td class="flavor">Green apple, citrus, pineapple, papaya</td>
+        <td class="flavor">Fruity, Sweet, Sour</td>
       </tr>
 
       <tr>
         <td scope="row">Chenin Blanc</td>
         <td>France</td>
-        <td class="flavor">Ripe apple, Lemon drop, Pear, Honeydew</td>
+        <td class="flavor">Sweet, Fruity</td>
       </tr>
 
       <tr>
         <td scope="row">Gewurztraminer</td>
         <td>France</td>
-        <td class="flavor">Lychee, Grapefruit, Flowers, Talc</td>
+        <td class="flavor">Smokey, Fruity</td>
       </tr>
 
       <tr>
         <td scope="row">Marsanne</td>
         <td>France</td>
-        <td class="flavor">Marzipan, White Peaches, Pear</td>
+        <td class="flavor">Dry, Fruity</td>
       </tr>
 
       <tr>
         <td scope="row">Muscat</td>
         <td>Italy</td>
-        <td class="flavor">Oranges, Tangerines</td>
+        <td class="flavor">Fruity, Sweet, Dry</td>
       </tr>
 
       <tr>
         <td scope="row">Pinot Blanc</td>
         <td>France</td>
-        <td class="flavor">Green apple, Citrus</td>
+        <td class="flavor">Fruity, Sweet</td>
       </tr>
 
       <tr>
         <td scope="row">Pinot Gris/Grigio</td>
         <td>France</td>
-        <td class="flavor">Citrus, Fresh pear, Melon</td>
+        <td class="flavor">Fruity, Flowery</td>
       </tr>
 
       <tr>
         <td scope="row">Riesling</td>
         <td>Germany</td>
-        <td class="flavor">Green apple, Citrus, Apricot, Peach, Honeysuckle</td>
+        <td class="flavor">Fruity, Dry, Sour/td>
       </tr>
 
       <tr>
         <td scope="row">Roussanne</td>
         <td>France</td>
-        <td class="flavor">Lime, Citrus, Stone fruits</td>
+        <td class="flavor">Sour, Bitter, Dry</td>
       </tr>
 
       <tr>
         <td scope="row">Sauvignon/Fume Blanc</td>
         <td>France</td>
-        <td class="flavor">Grass, Herb, Citrus, Pineapple, Peach</td>
+        <td class="flavor">Sour, Flowery, Fruity</td>
       </tr>
 
       <tr>
         <td scope="row">Semillon</td>
         <td>France</td>
-        <td class="flavor">Fig, Melon, Light herb</td>
+        <td class="flavor">Bitter, Flowery</td>
       </tr>
 
       <tr>
         <td scope="row">Viognier</td>
         <td>Croatia</td>
-        <td class="flavor">Flowers, Citrus rind, Apricot, Peach</td>
+        <td class="flavor">Flowery, Sour, Dry</td>
       </tr>
 
       <tr>
         <td scope="row">Gruner Veltliner</td>
         <td>Austria</td>
-        <td class="flavor">Apple, Peach, Citrus, Mineral Notes</td>
+        <td class="flavor">Fruity, Dry, Sour</td>
       </tr>
 
 
 
   </table>
 
-  <table>
+  <a name="cheese"></a>
+  <table class="table">
     <span>Cheese's</span>
     <caption>Cheese</caption>
         <thead>
           <tr>
             <th scope="col">Name</th>
+            <th scope="col">Pairs Best with</th>
           </tr>
         </thead>
             <tr>
               <td scope="row">Asiago</td>
+              <td class="flavor">Sour, Dry, Spicy</td>
             </tr>
 
             <tr>
               <td scope="row">Blue</td>
+              <td class="flavor">Bitter, Smokey, Sour</td>
             </tr>
 
             <tr>
               <td scope="row">Brie</td>
+              <td class="flavor">Fruity, Sweet, Dry, Flowery</td>
             </tr>
 
             <tr>
               <td scope="row">Cheddar</td>
+              <td class="flavor">Smokey, Bitter, Spicy</td>
             </tr>
 
             <tr>
               <td scope="row">Colby</td>
+              <td class="flavor">Flowery, Sweet, Dry</td>
             </tr>
 
             <tr>
               <td scope="row">Feta</td>
+              <td class="flavor">Sweet, Dry, Smokey, Spicy</td>
             </tr>
 
             <tr>
               <td scope="row">Havarti</td>
+              <td class="flavor">Sweet, Dry, Fruity</td>
             </tr>
 
             <tr>
               <td scope="row">Mozzarella</td>
+              <td class="flavor">Bitter, Spicy, Dry</td>
             </tr>
 
             <tr>
               <td scope="row">Muenster</td>
+              <td class="flavor">Dry, Sweet, Sour, Fruity, Flowery</td>
             </tr>
             <tr>
               <td scope="row">Parmesan</td>
+              <td class="flavor">Dry, Smokey, Spicy</td>
             </tr>
             <tr>
               <td scope="row">Provolone</td>
+              <td class="flavor">Bitter, Sour, Fruity</td>
             </tr>
 
             <tr>
               <td scope="row">Swiss</td>
+              <td class="flavor">Dry, Smokey, Spicy, Bitter</td>
             </tr>
 
 
@@ -294,6 +313,7 @@
 
 
 
+  </div>
   </div>
 </body>
 
