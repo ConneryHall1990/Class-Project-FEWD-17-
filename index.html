@@ -1,6 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
+  <!--Entering my jQuery and Bootstrap-->
   <script
   src="https://code.jquery.com/jquery-3.2.1.js"
   integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
@@ -19,13 +20,12 @@
     <header>
 
 
-
-  	       <h1 class="name">Better With Age</h1>
+  	       <h1 class="name" style="text-align: left">Better With Age</h1>
            <nav class="navbar navbar-default">
   	       <ul class="nav navbar-nav">
   	           <li><a href="#red">Red Wines</a></li>
   		         <li><a href="#white">White Wines</a></li>
-  		         <li><a href="#cheese">Cheese’s</a></li>
+  		         <li><a href="#cheese">Cheese</a></li>
   	       </ul>
          </nav>
 
@@ -33,6 +33,7 @@
 
   </header>
 
+<!--Used checkboxes over radio buttons so that multiple flavors could be chosen-->
   <h2>Choose your Flavors</h2>
   <form action="">
       <input type="checkbox" name="Bitter" value="bitter">Bitter</input><br>
@@ -53,7 +54,8 @@
 
     </form>
 
-
+<!--I chose tables to reflect all the available wines on the site because like most researchable content
+there is much more than what I have available.  This gives you the opportunity to review the options before beginning-->
     <br>
   <span>Wines List</span>
 
@@ -96,7 +98,7 @@
       <tr>
         <td scope="row">Malbec</td>
         <td>France</td>
-        <td class="flavor">Sour, Spicy, Dry</td>
+        <td class="flavor">Sour, Spicy, Smokey, Dry</td>
       </tr>
 
       <tr>
@@ -108,7 +110,7 @@
       <tr>
         <td scope="row">Mourvedre/Mataro</td>
         <td>Spain</td>
-        <td class="flavor">Spice, Bitter, Cherry</td>
+        <td class="flavor">Spice, Bitter, Fruity</td>
       </tr>
 
       <tr>
@@ -203,7 +205,7 @@
       <tr>
         <td scope="row">Roussanne</td>
         <td>France</td>
-        <td class="flavor">Sour, Bitter, Dry</td>
+        <td class="flavor">Sour, Bitter, Smokey, Dry</td>
       </tr>
 
       <tr>
@@ -304,6 +306,18 @@
 
 
   </table>
+
+  <section id="nwsltr" class="nwsltr">
+    <div class="container">
+        <h3>Join our Whinners List! Updates and Discounts included!</h3>
+        <form action="/#my-handling-form-page" method="post">
+          <label class="nwsltr-label">Name</label>
+          <input class="nwsltr-btn" type="name" placeholder="Michael Broadbent">
+          <label class="nwsltr-label">Email</label>
+          <input class="nwsltr-btn" type="email" placeholder="mikebb@gmail.com">
+        </form>
+    </div>
+  </section>
 
 
 
