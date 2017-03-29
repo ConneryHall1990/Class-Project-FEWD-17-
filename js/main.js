@@ -1,4 +1,6 @@
 
+//Single line comment
+/*Multiple line comment*/
 
 $(document).ready(function(){
   $("input[type='checkbox']").on('click', function(){
